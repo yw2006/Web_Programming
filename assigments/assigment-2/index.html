@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <button class="theme-toggle" id="toggle">🌙 Dark Mode</button>
+        </header>
+<div class="add-task-form">
+            <h2>Add New Task</h2>
+        <div class="form-group">
+           <label for="taskTitle">Title:</label>
+            <input type="text" id="taskTitle" placeholder="Enter task title" required>
+        </div>
+            <div class="form-group">
+                <label for="taskDescription">Description:</label>
+            <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="taskPriority">Priority:</label>
+             <select id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+            <button class="add-btn" id="addTaskBtn">Add Task</button>
+        </div>
+
+    <div class="filter-section">
+         <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="high">High Priority</button>
+         <button class="filter-btn" data-filter="medium">Medium Priority</button>
+            <button class="filter-btn" data-filter="low">Low Priority</button>
+        </div>
+
+    <div class="tasks-container" id="tasksContainer">
+            <div class="empty">No tasks yet. Add one above!</div>
+     </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
