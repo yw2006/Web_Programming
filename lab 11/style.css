@@ -1,0 +1,80 @@
+body{
+    background-color: lightyellow;
+    color: darkred;
+    background-image: url('./room-interior-architecture-space-indoor-concept.jpg');
+    background-repeat: no-repeat;
+
+
+}
+h1,h2{
+    padding: 5px;
+    margin: 5px;
+    text-decoration:blue underline wavy ;
+    font-variant:initial;
+    font-weight:initial;
+
+}
+.tbl td,.tbl th{
+    border: 1px solid rgb(220, 134, 134);
+    text-align: center;
+}
+a:visited {
+    color:green;
+}
+a:link {
+    color: violet;
+}
+a:hover {
+    color: blanchedalmond;
+}
+header {
+    background-image: url('./room-interior-architecture-space-indoor-concept.jpg');
+}
+.head {
+    border: solid bisque 1px ;
+}
+
+.flow {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}
+.container {
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-flow: row wrap;
+}
+.container-2{
+    display: grid;
+    background-color: navy;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: 
+    "foot rights"
+    ,"foot lefts";
+    justify-content: center;
+    align-items: center;
+}
+.container .child-1,.child-2,.child-3 {
+    margin: 10px;
+}
+.child-1{
+ background-color: blueviolet;
+padding: 10px;
+grid-area: "lefts";
+}
+.child-2{
+    background-color: yellowgreen;
+    padding: 10px;
+    grid-area: "rights";
+
+}
+.child-3{
+    background-color: cadetblue;
+    padding: 10px;
+    grid-area: "foot";
+}

@@ -55,7 +55,7 @@ addTaskBtn.addEventListener("click", function () {
 function displayTasks() {
   let filteredTasks = tasks;
   if (currentFilter !== "all") {
-    filteredTasks = tasks.filter((task) => task.priority === currentFilter);
+    filteredTasks = tasks.filter((task) => task.priority !== currentFilter);
   }
 
   tasksContainer.innerHTML = "";

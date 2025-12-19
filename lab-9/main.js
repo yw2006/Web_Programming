@@ -7,7 +7,8 @@ let y = ()=>{
     console.log("y");
 }
 callAthorFn(y);
-
+معتز= "شاوث"
+console.log(معتز);
 var arr = [100,10,200,300,400,500,600,700,800,900]
 arr.map((x)=>console.log(x)
 );
